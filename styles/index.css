@@ -43,3 +43,108 @@ nav .menu a{
 }
 
 nav .menu a:hover{ background: #f0c27b; }
+
+
+nav .menu a:hover { background: #f0c27b; }
+.account-cart a { margin-left: 1rem; }
+
+/* Search box */
+.search input {
+  padding: .5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Main grid layout */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem 5%;
+}
+@media (min-width: 768px) {
+  main { grid-template-columns: 2fr 1fr; }
+}
+
+/* Products grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 1.5rem;
+}
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-card h3 { font-size: 1.1rem; margin: .5rem 0; }
+.product-card .price {
+  font-size: 1.2rem; color: #d35400; font-weight: bold;
+}
+.product-card button {
+  padding: .6rem;
+  background: #d35400;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .3s;
+}
+.product-card button:hover { background: #e67e22; }
+
+/* Collections section */
+.collections {
+  margin-top: 2rem;
+  text-align: center;
+}
+.collections h2 {
+  margin-bottom: 1rem;
+  color: #d35400;
+}
+.collections a {
+  display: inline-block;
+  margin: .3rem .5rem;
+  padding: .5rem 1rem;
+  background: #fff;
+  border: 1px solid #d35400;
+  border-radius: 20px;
+  color: #d35400;
+  transition: background .3s, color .3s;
+}
+.collections a:hover {
+  background: #d35400;
+  color: #fff;
+}
+
+/* About section */
+.about {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.about h2 { color: #d35400; margin-bottom: 1rem; }
+.about p { font-size: 1rem; }
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem 5%;
+}
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.footer-sections div a {
+  display: block;
+  color: #f9f9f9;
+  margin: .3rem 0;
+}
+footer p { text-align: center; font-size: .9rem; }
