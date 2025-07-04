@@ -1,0 +1,45 @@
+*{
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background:#f9f9; color: #333; line-height: 1.6;
+}
+a{
+  text-decoration: none; color: inherit;
+}
+
+.top-bar{
+  background: #fff7e6;
+  text-align: center;
+  padding: .5rem;
+  font-size: .9rem;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+nav .logo a{
+  font-size: 1.8rem; font-weight: bold;color: #d35400;
+}
+
+nav .menu{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav .menu a{
+  padding: .5rem 1rem;
+  border-radius: 4px;
+  transition:;
+}
+
+nav .menu a:hover{ background: #f0c27b; }
